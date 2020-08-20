@@ -1,0 +1,116 @@
+@font-face {
+  font-family: Linea01;
+  src: url("linea01.ttf");
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #777;
+  padding: 3rem;
+  font-family: "Lato", sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.heading-primary {
+  color: #008cff;
+  font-family: "Linea01", sans-serif;
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 4.5rem;
+  font-weight: 600;
+  letter-spacing: .5rem;
+}
+
+.heading-primary--sub {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: .20rem;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.u-margin-top-big {
+  margin-top: 8rem;
+}
+
+.u-margin-top-huge {
+  margin-top: 10rem;
+}
+
+.header {
+  height: 85vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(248, 248, 255, 0.02)), to(rgba(245, 245, 245, 0.65))), url(../img/cakemacron.jpg);
+  background-image: linear-gradient(to right bottom, rgba(248, 248, 255, 0.02), rgba(245, 245, 245, 0.65)), url(../img/cakemacron.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  margin-bottom: 3rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.header__logo {
+  height: 5.5rem;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 20%;
+  right: 3%;
+  text-align: center;
+}
+
+/* Site Navigation */
+:before,
+:after {
+  content: "";
+  display: table;
+}
+
+:after {
+  clear: both;
+}
+
+/* End Site Navigation */
+/*# sourceMappingURL=cakemain.css.map */
