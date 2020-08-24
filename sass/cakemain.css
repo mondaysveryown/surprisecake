@@ -1,6 +1,41 @@
+/* Custom Fonts */
 @font-face {
   font-family: Linea01;
   src: url("linea01.ttf");
+}
+
+/*   @font-face {
+	     font-family: 'Linea01';
+	     src: url('linea01.eot'); // IE9 Compat Modes
+	     src: url('linea01.eot?#iefix') format('embedded-opentype'), // IE6-IE8
+         url('linea01.woff') format('woff'), // Modern Browsers
+	     url('linea01.ttf')  format('truetype'), // Safari, Android, iOS 
+        url('Linea01.svg#svgFontName') format('svg'); // Legacy iOS 
+    }
+    For bold and italic make suree to use font weight and dont style properties
+ */
+/* End Custom Fonts */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 *,
@@ -31,7 +66,9 @@ body {
 
 .heading-primary {
   color: #008cff;
-  font-family: "Linea01", sans-serif;
+  text-transform: uppercase;
+  font-family: Linea01, sans-serif;
+  margin-bottom: 16rem;
 }
 
 .heading-primary--main {
@@ -39,6 +76,8 @@ body {
   font-size: 4.5rem;
   font-weight: 600;
   letter-spacing: .5rem;
+  -webkit-animation: fadeIn 4s ease-in;
+          animation: fadeIn 4s ease-in;
 }
 
 .heading-primary--sub {
@@ -46,6 +85,8 @@ body {
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: .20rem;
+  -webkit-animation: fadeIn 5s ease-in;
+          animation: fadeIn 5s ease-in;
 }
 
 .u-center-text {
@@ -70,6 +111,24 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem;
+}
+
+.btn {
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 2rem;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.btn--white {
+  background: #F8F8FF;
+  color: #ECA7FF;
 }
 
 .header {

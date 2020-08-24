@@ -8,15 +8,17 @@ body {
 
 .heading-primary  {
     color: $color-secondary;
-    font-family: "Linea01", sans-serif;
+    text-transform: uppercase;
+    font-family: Linea01, sans-serif;
 
+    margin-bottom: 16rem;
 
     &--main {
         display: block;
         font-size: 4.5rem;
         font-weight: 600;
         letter-spacing: .5rem;
-
+        animation: fadeIn 4s ease-in;
     }
 
     &--sub {
@@ -24,5 +26,7 @@ body {
         font-size: 3rem;
         font-weight: 700;
         letter-spacing: .20rem;
+        animation: fadeIn 5s ease-in;
+        
     }
 }
