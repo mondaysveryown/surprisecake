@@ -1,6 +1,4 @@
 .btn {
-
-    transform: translate(0, -50%);
     
     &:link,
     &:visited {
@@ -9,12 +7,26 @@
         padding: 1.5rem 2rem;
         display: inline-block;
         font-size: 1.2rem;
+        border-radius: 2rem;
+        box-shadow: .3rem .1rem .5rem rgba($color-black, .25);
+        animation: slideRight 5.5s ease-in;
+        
+    }
 
+    &:hover {
+        transform: translateY(-3px); //negative value goes up
+        box-shadow: .5rem .2rem .5rem rgba($color-black, .25);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: .2rem .5rem .5rem rgba($color-black, .15);
     }
 
 
-    &--white {
-        background: $color-white;
-        color: $color-tertiary;
+
+    &--pink {
+        background-color: $color-primary-dark;
+        color: $color-secondary;
     }
 }

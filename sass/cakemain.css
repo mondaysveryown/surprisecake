@@ -38,6 +38,36 @@
   }
 }
 
+@-webkit-keyframes slideRight {
+  0% {
+    opacity: 0;
+    translate: translateX(12rem);
+  }
+  10% {
+    opacity: 0;
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    translate: translateX(12rem);
+  }
+  10% {
+    opacity: 0;
+    -webkit-transform: translateX(10rem);
+            transform: translateX(10rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -78,6 +108,7 @@ body {
   letter-spacing: .5rem;
   -webkit-animation: fadeIn 4s ease-in;
           animation: fadeIn 4s ease-in;
+  text-shadow: 0.22rem 0.1rem 0.5rem rgba(0, 0, 0, 0.35);
 }
 
 .heading-primary--sub {
@@ -87,6 +118,7 @@ body {
   letter-spacing: .20rem;
   -webkit-animation: fadeIn 5s ease-in;
           animation: fadeIn 5s ease-in;
+  text-shadow: 0.3rem 0.1rem 0.5rem rgba(0, 0, 0, 0.36);
 }
 
 .u-center-text {
@@ -113,22 +145,36 @@ body {
   margin-top: 10rem;
 }
 
-.btn {
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-}
-
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 2rem;
   display: inline-block;
   font-size: 1.2rem;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0.3rem 0.1rem 0.5rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0.3rem 0.1rem 0.5rem rgba(0, 0, 0, 0.25);
+  -webkit-animation: slideRight 5.5s ease-in;
+          animation: slideRight 5.5s ease-in;
 }
 
-.btn--white {
-  background: #F8F8FF;
-  color: #ECA7FF;
+.btn:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0.5rem 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0.5rem 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+.btn:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.btn--pink {
+  background-color: #eb7f7f;
+  color: #008cff;
 }
 
 .header {

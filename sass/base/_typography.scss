@@ -10,6 +10,7 @@ body {
     color: $color-secondary;
     text-transform: uppercase;
     font-family: Linea01, sans-serif;
+    
 
     margin-bottom: 16rem;
 
@@ -19,6 +20,7 @@ body {
         font-weight: 600;
         letter-spacing: .5rem;
         animation: fadeIn 4s ease-in;
+        text-shadow: .22rem .1rem .5rem rgba($color-black, .35);
     }
 
     &--sub {
@@ -27,6 +29,7 @@ body {
         font-weight: 700;
         letter-spacing: .20rem;
         animation: fadeIn 5s ease-in;
+        text-shadow: .3rem .1rem .5rem rgba($color-black, .36);
         
     }
 }
