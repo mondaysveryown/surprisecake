@@ -154,8 +154,8 @@ body {
   border-radius: 2rem;
   -webkit-box-shadow: 0.3rem 0.1rem 0.5rem rgba(0, 0, 0, 0.25);
           box-shadow: 0.3rem 0.1rem 0.5rem rgba(0, 0, 0, 0.25);
-  -webkit-animation: slideRight 5.5ts ease-in;
-          animation: slideRight 5.5ts ease-in;
+  -webkit-animation: slideRight 5.5s ease-in;
+          animation: slideRight 5.5s ease-in;
 }
 
 .btn:hover {
