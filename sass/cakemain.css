@@ -177,6 +177,16 @@ body {
   color: #008cff;
 }
 
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#EDD1F0, #eb7f7f);
+}
+
 .header {
   height: 85vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(248, 248, 255, 0.02)), to(rgba(245, 245, 245, 0.65))), url(../img/cakemacron.jpg);
