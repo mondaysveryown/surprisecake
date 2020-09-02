@@ -121,6 +121,15 @@ body {
   text-shadow: 0.3rem 0.1rem 0.5rem rgba(0, 0, 0, 0.36);
 }
 
+.heading-secondary {
+  margin-top: 4rem;
+  position: absolute;
+}
+
+.heading-secondary--main {
+  position: absolute;
+}
+
 .u-center-text {
   text-align: center;
 }
@@ -177,6 +186,20 @@ body {
   color: #008cff;
 }
 
+.heading-secondary {
+  position: relative;
+}
+
+.heading-secondary--main {
+  position: absolute;
+}
+
+.navigation__button {
+  background-color: #F8F8FF;
+  height: 7rem;
+  width: 7rem;
+}
+
 .navigation__background {
   height: 6rem;
   width: 6rem;
@@ -185,6 +208,7 @@ body {
   top: 6.5rem;
   right: 6.5rem;
   background-image: radial-gradient(#EDD1F0, #eb7f7f);
+  z-index: 1000;
 }
 
 .header {
@@ -228,4 +252,7 @@ body {
 }
 
 /* End Site Navigation */
+.space {
+  padding: 15rem 0;
+}
 /*# sourceMappingURL=cakemain.css.map */

@@ -5,7 +5,9 @@
     }
 
     &__button {
-
+        background-color: $color-white;
+        height: 7rem;
+        width: 7rem;
     }
 
     &__background {
@@ -16,6 +18,7 @@
         top: 6.5rem;
         right: 6.5rem;
         background-image: radial-gradient($color-primary, $color-primary-dark);
+        z-index: 1000;
     }
 
     &__nav {
