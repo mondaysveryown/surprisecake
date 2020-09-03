@@ -1,13 +1,18 @@
 .navigation {
 
     &__checkbox {
-
+        display: none;
     }
 
     &__button {
         background-color: $color-white;
         height: 7rem;
         width: 7rem;
+        position: fixed;
+        top: 6rem;
+        right: 6rem;
+        border-radius: 50%;
+        z-index: 2000;
     }
 
     &__background {
@@ -17,24 +22,46 @@
         position: fixed;   
         top: 6.5rem;
         right: 6.5rem;
-        background-image: radial-gradient($color-primary, $color-primary-dark);
+        background-image: radial-gradient($color-primary-bright, $color-primary-dark);
         z-index: 1000;
+
+        transform: scale(80);
     }
 
     &__nav {
-        
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1500;
     }
 
     &__list {
-
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        list-style: none;
+        text-align: center;
     }
 
     &__item {
-
+        margin: 1rem;
     }
 
     &__link {
-
+        font-size: 3rem;
+        font-weight: 300; // thin-text
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-white;
+        
+        &:hover {
+            background-color: $color-white;
+            color: $color-primary-brightish;
+            padding: 0 9rem 0 1.5rem;
+        }
     }
 
 }

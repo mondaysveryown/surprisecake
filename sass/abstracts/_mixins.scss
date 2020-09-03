@@ -14,23 +14,9 @@
     }
 }
 
-/* Custom Fonts */
-
-@font-face { 
-    font-family: Linea01; 
-    src: url('linea01.ttf'); 
-} 
-
- /*   @font-face {
-	     font-family: 'Linea01';
-	     src: url('linea01.eot'); // IE9 Compat Modes
-	     src: url('linea01.eot?#iefix') format('embedded-opentype'), // IE6-IE8
-         url('linea01.woff') format('woff'), // Modern Browsers
-	     url('linea01.ttf')  format('truetype'), // Safari, Android, iOS 
-        url('Linea01.svg#svgFontName') format('svg'); // Legacy iOS 
-    }
-    For bold and italic make suree to use font weight and dont style properties
- */
-
- 
- /* End Custom Fonts */
+@mixin centerxy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
